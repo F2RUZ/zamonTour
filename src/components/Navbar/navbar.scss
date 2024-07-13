@@ -1,0 +1,86 @@
+.navbar {
+  padding-top: 15px;
+  width: 100% !important;
+  background-color: #22b3c1;
+  height: 70px;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1100px;
+    margin: auto;
+  }
+
+  &__logo {
+    width: 139px;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__link {
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: capitalize;
+    color: white;
+    transition: all 0.3s linear;
+    font-family: "Poppins";
+
+    &:hover {
+      opacity: 0.8;
+      color: white;
+    }
+  }
+
+  &__languages {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  &__laguage {
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: "Poppins";
+
+    &:hover {
+      color: black;
+      transition: all 0.2s linear;
+    }
+  }
+  &__burger {
+    display: none;
+    flex-direction: column;
+    gap: 7px;
+  }
+  &__hr {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+  }
+  &__hr:first-child,
+  &__hr:last-child {
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .navbar {
+    &__wrapper {
+      width: 90%;
+    }
+    &__list {
+      display: none;
+    }
+    &__languages {
+      display: none;
+    }
+    &__burger{
+      display: flex;
+    }
+  }
+}
