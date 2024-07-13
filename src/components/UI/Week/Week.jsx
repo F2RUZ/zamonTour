@@ -15,36 +15,35 @@ function Week() {
     slidesToShow: 3,
     slidesToScroll: 4,
     initialSlide: 0,
-    
-    responsive: [
-        {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                infinite: true,
-                dots: true
-            }
-        },
 
-   
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                initialSlide: 1
-            }
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
         },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-            }
-        }
-    ]
-};
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
   return (
     <div className="week">
       <div className="week__wrapper">
@@ -64,7 +63,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item" sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -119,7 +118,7 @@ function Week() {
           <CardMedia
             component="img"
             height="500"
-            image={img}
+            image="https://zamontour.uz/assets/images/cand.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -178,7 +177,7 @@ function Week() {
           <CardMedia
             component="img"
             height="500"
-            image={img}
+            image="https://zamontour.uz/assets/images/deals-04.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -237,7 +236,7 @@ function Week() {
           <CardMedia
             component="img"
             height="500"
-            image={img}
+            image="https://zamontour.uz/assets/images/usa1.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -296,7 +295,7 @@ function Week() {
           <CardMedia
             component="img"
             height="500"
-            image={img}
+            image="https://zamontour.uz/assets/images/deals-02.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -355,7 +354,7 @@ function Week() {
           <CardMedia
             component="img"
             height="500"
-            image={img}
+            image="https://zamontour.uz/assets/images/europe2.jpg"
             alt="green iguana"
             className="week__pic"
           />

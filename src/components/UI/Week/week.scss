@@ -31,6 +31,7 @@
   &__slider {
     margin: 100px auto;
     width: 90%;
+    margin-left: 200px;
   }
 
   &__card {
@@ -50,6 +51,9 @@
     }
     &-subtext {
       color: #afafaf;
+      font-weight: 500;
+      margin-left: 10px;
+      font-size: 1rem;
     }
   }
   &__hr {
@@ -77,26 +81,27 @@
     &__wrapper {
       width: 90%;
     }
-    &__title{
-        font-size: 2rem;
+    &__title {
+      font-size: 2rem;
     }
-    &__text{
-        font-size: 1rem;
+    &__text {
+      font-size: 1rem;
     }
-    &__slider{
-        width: 70%;
-        
+    &__slider {
+      width: 70%;
+      margin-left: 0;
+      margin: 100px auto;
     }
 
-    &__item{
+    &__item {
       bottom: 8%;
     }
-    &__card{
-        // width: 350px !important;
-        height: 450px;
+    &__card {
+      // width: 350px !important;
+      height: 450px;
     }
-    &__pic{
-        width: 70% !important;
+    &__pic {
+      width: 70% !important;
     }
   }
 }
