@@ -9,6 +9,7 @@ import Reservation from "../UI/Reservation/Reservation";
 import Visa from "../UI/Visa/Visa";
 import Week from "../UI/Week/Week";
 import Navbar from "../Navbar/Navbar";
+import Visit from "../UI/Visit/Visit";
 
 const Layout = () => {
   return (
@@ -18,6 +19,7 @@ const Layout = () => {
       <Week />
       <Visa />
       <Explore />
+      <Visit />
       <Location />
       <Reservation />
       <Maps />

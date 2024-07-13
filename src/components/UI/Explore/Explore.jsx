@@ -30,7 +30,12 @@ const Explore = () => {
               <CardContent>
                 <div className="explore__card-top">
                   <div>
-                    <Typography gutterBottom variant="h5" className="explore__subtitle" component="div">
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      className="explore__subtitle"
+                      component="div"
+                    >
                       Cheap Railway Tickets With Us
                     </Typography>
                     <Typography gutterBottom variant="h8" component="div">
@@ -57,6 +62,8 @@ const Explore = () => {
             </div>
           </div>
 
+          <hr className="explore__hr" />
+
           <div className="explore__card">
             <CardMedia
               component="img"
@@ -70,7 +77,12 @@ const Explore = () => {
               <CardContent>
                 <div className="explore__card-top">
                   <div>
-                    <Typography gutterBottom variant="h5" className="explore__subtitle" component="div">
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      className="explore__subtitle"
+                      component="div"
+                    >
                       Discover Exciting Air Travel Deals
                     </Typography>
                     <Typography gutterBottom variant="h8" component="div">
@@ -96,6 +108,8 @@ const Explore = () => {
               </CardContent>
             </div>
           </div>
+
+          <hr className="explore__hr" />
         </div>
       </div>
     </div>
