@@ -59,13 +59,13 @@
     align-items: center;
     gap: 30px;
     &-title {
-      font-size: 20px;
+      font-size: 1rem;
       color: #22b3c1;
       font-weight: 700;
       font-family: "Poppins";
     }
     &-text {
-      font-size: 15px;
+      font-size: 1rem;
       color: #afafaf;
       font-weight: 400;
       font-family: "Poppins";
@@ -122,14 +122,25 @@
     &__wrapper {
       width: 90%;
     }
-    &__text{
+    &__text {
       width: 90%;
       text-align: center;
     }
+    &__card{
+      width: 200px;
+    }
+    &__title{
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    &__card-title {
+      font-size: 1rem;
+    }
     &__bottom {
       flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
+      align-items: start;
+      // justify-content: flex-start;
       gap: 20px;
       min-height: 100px !important;
     }
