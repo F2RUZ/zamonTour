@@ -25,15 +25,15 @@
     color: #afafaf;
     font-weight: 600;
   }
-    &__cards{
+  &__cards {
     width: 85%;
-    }
+  }
   &__card {
     display: flex;
     align-items: center;
     gap: 15px;
     margin: 70px 0;
-    
+
     &-top {
       display: flex;
       align-items: start;
@@ -64,6 +64,10 @@
       width: 90%;
     }
 
+    &__cards {
+      width: 95%;
+      margin: auto;
+    }
     &__title {
       width: 100%;
       text-align: center;
@@ -76,8 +80,8 @@
     &__card {
       flex-wrap: wrap;
     }
-    &__subtitle{
-        font-size: 1rem !important;
+    &__subtitle {
+      font-size: 1rem !important;
     }
   }
 }
