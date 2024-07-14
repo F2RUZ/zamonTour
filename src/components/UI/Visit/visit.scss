@@ -32,11 +32,10 @@
   }
 
   &__links {
-    margin-top: 20px !important;
+    margin-top: 50px !important;
     font-size: 14px;
     color: #22b3c1;
     font-weight: 500;
-    transition: all 0.3s;
   }
 }
 
@@ -47,6 +46,7 @@
     }
 
     &__cards{
+        width: 95%;
         margin: auto;
     }
   }
