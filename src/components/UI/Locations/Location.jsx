@@ -3,6 +3,11 @@ import "./location.scss";
 const Location = () => {
   return (
     <div className="location">
+      <h2 className="Location__title">Best Locations</h2>
+      <p className="location__text">
+        Discover the best offers in each city, curated just for you. Immerse
+        yourself in a world of savings and indulge in unparalleled experiences.
+      </p>
       <div className="location__wrapper">
         <input type="radio" name="slide" id="c1" checked />
         <label htmlFor="c1" className="card">

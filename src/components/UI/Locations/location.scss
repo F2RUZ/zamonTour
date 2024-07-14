@@ -11,6 +11,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+  }
+  &__text {
+    width: 40%;
+    text-align: center;
+    margin: 50px 0;
+  }
 }
 
 .location__wrapper {
@@ -119,12 +130,14 @@ input:checked + label .description {
   background-repeat: no-repeat;
 }
 
-
-@media only screen and (max-width:1100px){
-    .location{
-
-        &__wrapper{
-            width: 90%;
-        }
+@media only screen and (max-width: 1100px) {
+  .location {
+    &__wrapper {
+      width: 90%;
     }
+
+    &__text {
+      width: 80%;
+    }
+  }
 }
