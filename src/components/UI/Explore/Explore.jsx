@@ -7,7 +7,7 @@ import CardMedia from "@mui/material/CardMedia";
 import { Button, CardContent, Typography } from "@mui/material";
 const Explore = () => {
   return (
-    <div className="explore">
+    <div id="explore" className="explore">
       <hr className="explore__hr" />
       <div className="explore__wrapper">
         <h2 className="explore__title">Explore Destinations With Ease</h2>

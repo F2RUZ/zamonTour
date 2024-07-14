@@ -12,12 +12,12 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <a href="#explore" className="navbar__link">
               About
             </a>
           </li>{" "}
           <li className="navbar__item">
-            <a href="#" className="navbar__link">
+            <a href="#week" className="navbar__link">
               Tours
             </a>
           </li>{" "}

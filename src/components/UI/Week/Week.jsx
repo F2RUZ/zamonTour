@@ -45,7 +45,7 @@ function Week() {
     ],
   };
   return (
-    <div className="week">
+    <div id="week" className="week">
       <div className="week__wrapper">
         <h2 className="week__title">Best Weekly Offers In Each City</h2>
         <p className="week__text">
