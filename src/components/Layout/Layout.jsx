@@ -10,6 +10,7 @@ import Visa from "../UI/Visa/Visa";
 import Week from "../UI/Week/Week";
 import Navbar from "../Navbar/Navbar";
 import Visit from "../UI/Visit/Visit";
+import FooterBottom from "../UI/FooterBottom/FooterBottom";
 
 const Layout = () => {
   return (
@@ -25,6 +26,7 @@ const Layout = () => {
       <Maps />
       <Forms />
       <Footer />
+      <FooterBottom />
     </>
   );
 };
