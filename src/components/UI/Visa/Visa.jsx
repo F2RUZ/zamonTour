@@ -89,11 +89,11 @@ const Visa = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Benifits of our Visa Support service
+                  Benifits of 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                <i className="fa-solid fa-thumbtack"></i>
-                  <span className="week__card-subtext">
+                  <span className="week__card-subtext ">
                     5 days Trip Hotel includes
                   </span>
                 </Typography>
@@ -145,7 +145,7 @@ const Visa = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Benifits of our Visa Support service
+                  Benifits of 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                <i className="fa-solid fa-thumbtack"></i>
@@ -202,7 +202,7 @@ const Visa = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Benifits of our Visa Support service
+                  Benifits of 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                <i className="fa-solid fa-thumbtack"></i>
@@ -259,7 +259,7 @@ const Visa = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Benifits of our Visa Support service
+                  Benifits of 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                <i className="fa-solid fa-thumbtack"></i>
@@ -316,7 +316,7 @@ const Visa = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Benifits of our Visa Support service
+                  Benifits of 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                <i className="fa-solid fa-thumbtack"></i>
@@ -373,7 +373,7 @@ const Visa = () => {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Benifits of our Visa Support service
+                  Benifits of 
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                <i className="fa-solid fa-thumbtack"></i>

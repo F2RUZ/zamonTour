@@ -1,5 +1,4 @@
 .visa {
-    
   width: 100%;
 
   &__wrapper {
@@ -23,7 +22,8 @@
     height: 350px;
   }
   &__item {
-    bottom: 0% !important;
+    bottom: 15% !important;
+    height: 300px !important;
   }
   &__card {
     height: 450px;
@@ -35,12 +35,17 @@
     &__wrapper {
       width: 90%;
     }
-
-    &__pic{
-        height: 200px;
+    &__card {
+      &-subtext {
+        font-size: 0.8rem !important;
+      }
     }
-    &__item{
-        height: 300px;
+
+    &__pic {
+      height: 200px;
+    }
+    &__item {
+      height: 300px;
     }
   }
 }

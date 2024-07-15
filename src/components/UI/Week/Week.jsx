@@ -9,7 +9,7 @@ import { Button, CardActionArea, CardActions, CardMedia } from "@mui/material";
 import "./week.scss";
 function Week() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -58,7 +58,7 @@ function Week() {
         <div className="week__card">
           <CardMedia
             component="img"
-            height="500"
+            height="450"
             image={img}
             alt="green iguana"
             className="week__pic"
@@ -117,7 +117,7 @@ function Week() {
         <div className="week__card">
           <CardMedia
             component="img"
-            height="500"
+            height="450"
             image="https://zamontour.uz/assets/images/cand.jpg"
             alt="green iguana"
             className="week__pic"
@@ -176,7 +176,7 @@ function Week() {
         <div className="week__card">
           <CardMedia
             component="img"
-            height="500"
+            height="450"
             image="https://zamontour.uz/assets/images/deals-04.jpg"
             alt="green iguana"
             className="week__pic"
@@ -235,7 +235,7 @@ function Week() {
         <div className="week__card">
           <CardMedia
             component="img"
-            height="500"
+            height="450"
             image="https://zamontour.uz/assets/images/usa1.jpg"
             alt="green iguana"
             className="week__pic"
@@ -294,7 +294,7 @@ function Week() {
         <div className="week__card">
           <CardMedia
             component="img"
-            height="500"
+            height="450"
             image="https://zamontour.uz/assets/images/deals-02.jpg"
             alt="green iguana"
             className="week__pic"
@@ -353,7 +353,7 @@ function Week() {
         <div className="week__card">
           <CardMedia
             component="img"
-            height="500"
+            height="450"
             image="https://zamontour.uz/assets/images/europe2.jpg"
             alt="green iguana"
             className="week__pic"

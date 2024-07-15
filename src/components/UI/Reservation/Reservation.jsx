@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 const Reservation = () => {
   return (
-    <div className="reservation">
+    <div id="reservation" className="reservation">
       <div className="reservation__wrapper">
         <p className="reservation__subtext">Book Prefered Deal Here</p>
         <hr className="explore__hr reservation__hr" />
