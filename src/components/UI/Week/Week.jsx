@@ -110,7 +110,7 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button  variant="contained">Make a Reservation</Button>
             </CardActions>
           </Card>
         </div>

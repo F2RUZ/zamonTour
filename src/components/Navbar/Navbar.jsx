@@ -14,38 +14,62 @@ const Navbar = () => {
 
         <div id={showNav ? "block" : "hodden"} className="navbar__box">
           <ul className="navbar__list">
-            <li className="navbar__item">
+            <li
+              onClick={() => {
+                handleNavbar();
+              }}
+              className="navbar__item"
+            >
               <a href="#" className="navbar__link">
                 Home
               </a>
             </li>
-            <li className="navbar__item">
+            <li
+              onClick={() => {
+                handleNavbar();
+              }}
+              className="navbar__item"
+            >
               <a href="#explore" className="navbar__link">
                 About
               </a>
             </li>{" "}
-            <li className="navbar__item">
+            <li
+              onClick={() => {
+                handleNavbar();
+              }}
+              className="navbar__item"
+            >
               <a href="#week" className="navbar__link">
                 Tours
               </a>
             </li>{" "}
-            <li className="navbar__item">
+            <li
+              onClick={() => {
+                handleNavbar();
+              }}
+              className="navbar__item"
+            >
               <a href="#reservation" className="navbar__link">
                 Contacts
               </a>
             </li>
           </ul>
 
-          <div  className="navbar__languages">
+          <div className="navbar__languages">
             <p className="navbar__laguage">Uz</p>
             <p className="navbar__laguage">Eng</p>
             <p className="navbar__laguage">Ru</p>
-            <p className="navbar__laguage">
-              <i className="fa-brands fa-telegram"></i>
-            </p>
-            <p className="navbar__laguage">
-              <i className="fa-brands fa-square-instagram"></i>
-            </p>
+            <a target="_blank" href="https://web.telegram.org/">
+              <p className="navbar__laguage">
+                <i className="fa-brands fa-telegram"></i>
+              </p>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/accounts/login/">
+              <p className="navbar__laguage">
+                <i className="fa-brands fa-square-instagram"></i>
+              </p>
+            </a>
           </div>
         </div>
         <div

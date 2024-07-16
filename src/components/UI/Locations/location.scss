@@ -55,7 +55,7 @@
 }
 
 .card {
-  width: 80px;
+  width: 50px;
   border-radius: 0.75rem;
   background-size: cover;
   cursor: pointer;
@@ -71,6 +71,7 @@
   -webkit-transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
   -o-transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
   transition: 0.6s cubic-bezier(0.28, -0.03, 0, 0.99);
+
 }
 
 .card > .row {
@@ -80,14 +81,15 @@
   display: flex;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+    overflow-y: hidden;  
 }
 
 .card > .row > .icon {
   background: rgb(64, 182, 129);
   color: white;
   border-radius: 50%;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,6 +126,7 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin-left: 20px;
 }
 
 .description p {
@@ -155,6 +158,7 @@ input:checked + label .description {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  
 }
 .card[for="c2"] {
   background-image: url("https://c0.wallpaperflare.com/preview/696/177/130/antalya-castle-date-turkey.jpg");
@@ -175,12 +179,6 @@ input:checked + label .description {
   background-repeat: no-repeat;
 }
 
-.card[for="c5"] {
-  background-image: url("https://wallpapers.com/images/hd/new-york-city-4k-ultra-hd-59x1sxl6wiyy4brl.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 
 @media only screen and (max-width: 1100px) {
   .location {

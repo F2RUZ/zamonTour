@@ -70,7 +70,6 @@ const Intro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-     
           <div className="intro__slide intro__dubai">
             <div className="intro__top">
               <p className="intro__text">
@@ -116,14 +115,15 @@ const Intro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-       
           <div className="intro__slide intro__antalia  ">
             <div className="intro__top">
               <p className="intro__text">
                 Take a Glimpse Into The Beautiful City Of:
               </p>
               <h2 className="intro__title">Antalia</h2>
-              <Button variant="contained">Go There</Button>
+              <a href="#reservation">
+                <Button type="button" variant="contained">Go There</Button>
+              </a>
             </div>
 
             <div className="intro__bottom">
@@ -162,7 +162,6 @@ const Intro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-     
           <div className="intro__slide intro__sharm">
             <div className="intro__top">
               <p className="intro__text">
@@ -203,7 +202,9 @@ const Intro = () => {
                   <h3 className="intro__card-title">690.86 M</h3>
                 </div>
               </div>{" "}
-              <Button variant="contained">Explore More</Button>
+              <a href="#reservation">
+                <Button variant="contained">Explore More</Button>
+              </a>
             </div>
           </div>
         </SwiperSlide>

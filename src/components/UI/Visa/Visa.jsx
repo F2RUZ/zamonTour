@@ -112,7 +112,7 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained"> Reservation</Button>
             </CardActions>
           </Card>
         </div>
@@ -169,7 +169,7 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained"> Reservation</Button>
             </CardActions>
           </Card>
         </div>
@@ -226,7 +226,7 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained"> Reservation</Button>
             </CardActions>
           </Card>
         </div>
@@ -283,7 +283,7 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained"> Reservation</Button>
             </CardActions>
           </Card>
         </div>
@@ -340,7 +340,7 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained"> Reservation</Button>
             </CardActions>
           </Card>
         </div>
@@ -397,7 +397,7 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained"> Reservation</Button>
             </CardActions>
           </Card>
         </div>
