@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .maps {
   margin: 100px 0;
   width: 100%;
@@ -18,8 +25,12 @@
     margin-bottom: 50px;
   }
   &__inputs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   &__map {
     border-radius: 20px;
@@ -37,7 +48,6 @@
       width: 100%;
     }
     &__inputs{
-      // flex-direction: column;
       gap: 20px;
     }
     &__title{
