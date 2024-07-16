@@ -5,15 +5,21 @@ import "./explore.scss";
 
 import CardMedia from "@mui/material/CardMedia";
 import { Button, CardContent, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 const Explore = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="explore" className="explore">
       <hr className="explore__hr" />
       <div className="explore__wrapper">
-        <h2 className="explore__title">Explore Destinations With Ease</h2>
+        <h2 className="explore__title">
+          {t("Explore Destinations With Ease")}
+        </h2>
         <p className="explore__text">
-          Find the best deals on railway and airplane tickets in each city,
-          carefully selected for you.
+          {t(
+            "Find the best deals on railway and airplane tickets in each city, carefully selected for you."
+          )}
         </p>
 
         <div className="explore__cards">
@@ -36,14 +42,14 @@ const Explore = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      Cheap Railway Tickets With Us
+                      {t("Cheap Railway Tickets With Us")}
                     </Typography>
                     <Typography gutterBottom variant="h8" component="div">
-                      Whole world
+                      {t("Whole world")}
                     </Typography>
                   </div>
                   <Button variant="contained" href="#contained-buttons">
-                    Explore more
+                    {t("Explore more")}
                   </Button>
                 </div>
                 <Typography
@@ -51,12 +57,9 @@ const Explore = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Embark on a railway adventure and explore destinations
-                  worldwide. Whether it's the picturesque landscapes, bustling
-                  cities, or cultural gems, our rail services offer a unique and
-                  comfortable way to traverse the globe. Immerse yourself in the
-                  beauty of different cultures, all accessible through our
-                  extensive railway network. .
+                  {t(
+                    `Embark on a railway adventure and explore destinations worldwide. Whether it's the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network. .`
+                  )}
                 </Typography>
               </CardContent>
             </div>
@@ -83,14 +86,14 @@ const Explore = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      Discover Exciting Air Travel Deals
+                      {t("Discover Exciting Air Travel Deals")}
                     </Typography>
                     <Typography gutterBottom variant="h8" component="div">
-                      Global Destinations
+                      {t("Global Destinations")}
                     </Typography>
                   </div>
                   <Button variant="contained" href="#contained-buttons">
-                    Explore more
+                    {t("Explore more")}
                   </Button>
                 </div>
                 <Typography
@@ -98,12 +101,10 @@ const Explore = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Embark on an airborne adventure and explore destinations
-                  worldwide. Whether it's the breathtaking landscapes, vibrant
-                  cities, or cultural treasures, our airline services provide a
-                  convenient and exhilarating way to navigate the globe. Immerse
-                  yourself in the richness of diverse cultures, all easily
-                  accessible through our extensive air travel network.
+                  {t(
+                    `Embark on an airborne adventure and explore destinations worldwide. Whether it's the breathtaking landscapes, vibrant cities, or cultural treasures, our airline services provide a convenient and exhilarating way to navigate the globe. Immerse yourself in the richness of diverse cultures, all easily accessible through our extensive air travel network. .`
+                  )}
+                  .
                 </Typography>
               </CardContent>
             </div>

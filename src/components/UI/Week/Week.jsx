@@ -7,6 +7,7 @@ import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions, CardMedia } from "@mui/material";
 
 import "./week.scss";
+import { useTranslation } from "react-i18next";
 function Week() {
   var settings = {
     dots: false,
@@ -44,17 +45,386 @@ function Week() {
       },
     ],
   };
+
+  const { t } = useTranslation();
   return (
     <div id="week" className="week">
       <div className="week__wrapper">
-        <h2 className="week__title">Best Weekly Offers In Each City</h2>
+        <h2 className="week__title">{t("Best Weekly Offers In Each City")}</h2>
         <p className="week__text">
-          Discover the best weekly offers in each city, curated just for you.
-          Immerse yourself in a world of savings and indulge in unparalleled
-          experiences.
+          {t(
+            "Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences."
+          )}
         </p>
       </div>
       <Slider {...settings} className="week__slider">
+        <div className="week__card">
+          <CardMedia
+            component="img"
+            height="450"
+            image='https://zamontour.uz/assets/images/deals-04.jpg'
+            alt="green iguana"
+            className="week__pic"
+          />
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <div className="week__card-top">
+                <div className="week__card-wrapper">
+                  <h3 className="week__card-title">{t("Canada")}</h3>
+                  <h2 className="week__card-price">$800</h2>
+                </div>
+
+                <div className="week__card-box">
+                  <div>
+                    <i className="fa-solid fa-users"></i>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="week__card-subtext">{t("/person")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="week__hr" />
+
+              <CardContent>
+                <Typography gutterBottom variant="h7" component="div">
+                  {t("Deal Includes")}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-car"></i>
+                  <span className="week__card-subtext">
+                    {t("5 Days Trip > Hotel Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-plane"></i>
+                  <span className="week__card-subtext">
+                    {t("Airplane Bill Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-building"></i>
+                  <span className="week__card-subtext">
+                    {t("Daily Places Visit")}
+                  </span>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
+            </CardActions>
+          </Card>
+        </div>
+
+        <div className="week__card">
+          <CardMedia
+            component="img"
+            height="450"
+            image='https://zamontour.uz/assets/images/deals-01.jpg'
+            alt="green iguana"
+            className="week__pic"
+          />
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <div className="week__card-top">
+                <div className="week__card-wrapper">
+                  <h3 className="week__card-title">{t("Canada")}</h3>
+                  <h2 className="week__card-price">$800</h2>
+                </div>
+
+                <div className="week__card-box">
+                  <div>
+                    <i className="fa-solid fa-users"></i>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="week__card-subtext">{t("/person")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="week__hr" />
+
+              <CardContent>
+                <Typography gutterBottom variant="h7" component="div">
+                  {t("Deal Includes")}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-car"></i>
+                  <span className="week__card-subtext">
+                    {t("5 Days Trip > Hotel Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-plane"></i>
+                  <span className="week__card-subtext">
+                    {t("Airplane Bill Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-building"></i>
+                  <span className="week__card-subtext">
+                    {t("Daily Places Visit")}
+                  </span>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="week__card">
+          <CardMedia
+            component="img"
+            height="450"
+            image='https://zamontour.uz/assets/images/offers-01.jpg'
+            alt="green iguana"
+            className="week__pic"
+          />
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <div className="week__card-top">
+                <div className="week__card-wrapper">
+                  <h3 className="week__card-title">{t("Canada")}</h3>
+                  <h2 className="week__card-price">$800</h2>
+                </div>
+
+                <div className="week__card-box">
+                  <div>
+                    <i className="fa-solid fa-users"></i>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="week__card-subtext">{t("/person")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="week__hr" />
+
+              <CardContent>
+                <Typography gutterBottom variant="h7" component="div">
+                  {t("Deal Includes")}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-car"></i>
+                  <span className="week__card-subtext">
+                    {t("5 Days Trip > Hotel Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-plane"></i>
+                  <span className="week__card-subtext">
+                    {t("Airplane Bill Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-building"></i>
+                  <span className="week__card-subtext">
+                    {t("Daily Places Visit")}
+                  </span>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="week__card">
+          <CardMedia
+            component="img"
+            height="450"
+            image='https://zamontour.uz/assets/images/usa1.jpg'
+            alt="green iguana"
+            className="week__pic"
+          />
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <div className="week__card-top">
+                <div className="week__card-wrapper">
+                  <h3 className="week__card-title">{t("Canada")}</h3>
+                  <h2 className="week__card-price">$800</h2>
+                </div>
+
+                <div className="week__card-box">
+                  <div>
+                    <i className="fa-solid fa-users"></i>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="week__card-subtext">{t("/person")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="week__hr" />
+
+              <CardContent>
+                <Typography gutterBottom variant="h7" component="div">
+                  {t("Deal Includes")}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-car"></i>
+                  <span className="week__card-subtext">
+                    {t("5 Days Trip > Hotel Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-plane"></i>
+                  <span className="week__card-subtext">
+                    {t("Airplane Bill Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-building"></i>
+                  <span className="week__card-subtext">
+                    {t("Daily Places Visit")}
+                  </span>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="week__card">
+          <CardMedia
+            component="img"
+            height="450"
+            image='https://zamontour.uz/assets/images/europe2.jpg'
+            alt="green iguana"
+            className="week__pic"
+          />
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <div className="week__card-top">
+                <div className="week__card-wrapper">
+                  <h3 className="week__card-title">{t("Canada")}</h3>
+                  <h2 className="week__card-price">$800</h2>
+                </div>
+
+                <div className="week__card-box">
+                  <div>
+                    <i className="fa-solid fa-users"></i>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="week__card-subtext">{t("/person")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="week__hr" />
+
+              <CardContent>
+                <Typography gutterBottom variant="h7" component="div">
+                  {t("Deal Includes")}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-car"></i>
+                  <span className="week__card-subtext">
+                    {t("5 Days Trip > Hotel Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-plane"></i>
+                  <span className="week__card-subtext">
+                    {t("Airplane Bill Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-building"></i>
+                  <span className="week__card-subtext">
+                    {t("Daily Places Visit")}
+                  </span>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
+            </CardActions>
+          </Card>
+        </div>
+        <div className="week__card">
+          <CardMedia
+            component="img"
+            height="450"
+            image='https://zamontour.uz/assets/images/cand.jpg'
+            alt="green iguana"
+            className="week__pic"
+          />
+          <Card className="week__item " sx={{ maxWidth: 345 }}>
+            <CardActionArea>
+              <div className="week__card-top">
+                <div className="week__card-wrapper">
+                  <h3 className="week__card-title">{t("Canada")}</h3>
+                  <h2 className="week__card-price">$800</h2>
+                </div>
+
+                <div className="week__card-box">
+                  <div>
+                    <i className="fa-solid fa-users"></i>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
+                  </div>
+
+                  <div>
+                    <p className="week__card-subtext">{t("/person")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <hr className="week__hr" />
+
+              <CardContent>
+                <Typography gutterBottom variant="h7" component="div">
+                  {t("Deal Includes")}
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-car"></i>
+                  <span className="week__card-subtext">
+                    {t("5 Days Trip > Hotel Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-plane"></i>
+                  <span className="week__card-subtext">
+                    {t("Airplane Bill Included")}
+                  </span>
+                </Typography>
+                <Typography variant="body2" color="text.secondary">
+                  <i className="fa-solid fa-building"></i>
+                  <span className="week__card-subtext">
+                    {t("Daily Places Visit")}
+                  </span>
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
+            </CardActions>
+          </Card>
+        </div>
         <div className="week__card">
           <CardMedia
             component="img"
@@ -67,18 +437,20 @@ function Week() {
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
-                  <h3 className="week__card-title">Canada</h3>
+                  <h3 className="week__card-title">{t("Canada")}</h3>
                   <h2 className="week__card-price">$800</h2>
                 </div>
 
                 <div className="week__card-box">
                   <div>
                     <i className="fa-solid fa-users"></i>
-                    <span className="week__card-subtext">300 check Ins</span>
+                    <span className="week__card-subtext">
+                      {t("345 Check Ins")}
+                    </span>
                   </div>
 
                   <div>
-                    <p className="week__card-subtext">/Person</p>
+                    <p className="week__card-subtext">{t("/person")}</p>
                   </div>
                 </div>
               </div>
@@ -87,325 +459,30 @@ function Week() {
 
               <CardContent>
                 <Typography gutterBottom variant="h7" component="div">
-                  Deal Includes
+                  {t("Deal Includes")}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   <i className="fa-solid fa-car"></i>
                   <span className="week__card-subtext">
-                    5 days Trip Hotel includes
+                    {t("5 Days Trip > Hotel Included")}
                   </span>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   <i className="fa-solid fa-plane"></i>
                   <span className="week__card-subtext">
-                    Airplan Bill includes
+                    {t("Airplane Bill Included")}
                   </span>
                 </Typography>
                 <Typography variant="body2" color="text.secondary">
                   <i className="fa-solid fa-building"></i>
                   <span className="week__card-subtext">
-                    Dailiy places visit
+                    {t("Daily Places Visit")}
                   </span>
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button  variant="contained">Make a Reservation</Button>
-            </CardActions>
-          </Card>
-        </div>
-        <div className="week__card">
-          <CardMedia
-            component="img"
-            height="450"
-            image="https://zamontour.uz/assets/images/cand.jpg"
-            alt="green iguana"
-            className="week__pic"
-          />
-          <Card className="week__item" sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <div className="week__card-top">
-                <div className="week__card-wrapper">
-                  <h3 className="week__card-title">Canada</h3>
-                  <h2 className="week__card-price">$800</h2>
-                </div>
-
-                <div className="week__card-box">
-                  <div>
-                    <i className="fa-solid fa-users"></i>
-                    <span className="week__card-subtext">300 check Ins</span>
-                  </div>
-
-                  <div>
-                    <p className="week__card-subtext">/Person</p>
-                  </div>
-                </div>
-              </div>
-
-              <hr className="week__hr" />
-
-              <CardContent>
-                <Typography gutterBottom variant="h7" component="div">
-                  Deal Includes
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-car"></i>
-                  <span className="week__card-subtext">
-                    5 days Trip Hotel includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-plane"></i>
-                  <span className="week__card-subtext">
-                    Airplan Bill includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-building"></i>
-                  <span className="week__card-subtext">
-                    Dailiy places visit
-                  </span>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
-            </CardActions>
-          </Card>
-        </div>
-        <div className="week__card">
-          <CardMedia
-            component="img"
-            height="450"
-            image="https://zamontour.uz/assets/images/deals-04.jpg"
-            alt="green iguana"
-            className="week__pic"
-          />
-          <Card className="week__item" sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <div className="week__card-top">
-                <div className="week__card-wrapper">
-                  <h3 className="week__card-title">Canada</h3>
-                  <h2 className="week__card-price">$800</h2>
-                </div>
-
-                <div className="week__card-box">
-                  <div>
-                    <i className="fa-solid fa-users"></i>
-                    <span className="week__card-subtext">300 check Ins</span>
-                  </div>
-
-                  <div>
-                    <p className="week__card-subtext">/Person</p>
-                  </div>
-                </div>
-              </div>
-
-              <hr className="week__hr" />
-
-              <CardContent>
-                <Typography gutterBottom variant="h7" component="div">
-                  Deal Includes
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-car"></i>
-                  <span className="week__card-subtext">
-                    5 days Trip Hotel includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-plane"></i>
-                  <span className="week__card-subtext">
-                    Airplan Bill includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-building"></i>
-                  <span className="week__card-subtext">
-                    Dailiy places visit
-                  </span>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
-            </CardActions>
-          </Card>
-        </div>
-        <div className="week__card">
-          <CardMedia
-            component="img"
-            height="450"
-            image="https://zamontour.uz/assets/images/usa1.jpg"
-            alt="green iguana"
-            className="week__pic"
-          />
-          <Card className="week__item" sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <div className="week__card-top">
-                <div className="week__card-wrapper">
-                  <h3 className="week__card-title">Canada</h3>
-                  <h2 className="week__card-price">$800</h2>
-                </div>
-
-                <div className="week__card-box">
-                  <div>
-                    <i className="fa-solid fa-users"></i>
-                    <span className="week__card-subtext">300 check Ins</span>
-                  </div>
-
-                  <div>
-                    <p className="week__card-subtext">/Person</p>
-                  </div>
-                </div>
-              </div>
-
-              <hr className="week__hr" />
-
-              <CardContent>
-                <Typography gutterBottom variant="h7" component="div">
-                  Deal Includes
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-car"></i>
-                  <span className="week__card-subtext">
-                    5 days Trip Hotel includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-plane"></i>
-                  <span className="week__card-subtext">
-                    Airplan Bill includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-building"></i>
-                  <span className="week__card-subtext">
-                    Dailiy places visit
-                  </span>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
-            </CardActions>
-          </Card>
-        </div>
-        <div className="week__card">
-          <CardMedia
-            component="img"
-            height="450"
-            image="https://zamontour.uz/assets/images/deals-02.jpg"
-            alt="green iguana"
-            className="week__pic"
-          />
-          <Card className="week__item" sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <div className="week__card-top">
-                <div className="week__card-wrapper">
-                  <h3 className="week__card-title">Canada</h3>
-                  <h2 className="week__card-price">$800</h2>
-                </div>
-
-                <div className="week__card-box">
-                  <div>
-                    <i className="fa-solid fa-users"></i>
-                    <span className="week__card-subtext">300 check Ins</span>
-                  </div>
-
-                  <div>
-                    <p className="week__card-subtext">/Person</p>
-                  </div>
-                </div>
-              </div>
-
-              <hr className="week__hr" />
-
-              <CardContent>
-                <Typography gutterBottom variant="h7" component="div">
-                  Deal Includes
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-car"></i>
-                  <span className="week__card-subtext">
-                    5 days Trip Hotel includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-plane"></i>
-                  <span className="week__card-subtext">
-                    Airplan Bill includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-building"></i>
-                  <span className="week__card-subtext">
-                    Dailiy places visit
-                  </span>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
-            </CardActions>
-          </Card>
-        </div>
-        <div className="week__card">
-          <CardMedia
-            component="img"
-            height="450"
-            image="https://zamontour.uz/assets/images/europe2.jpg"
-            alt="green iguana"
-            className="week__pic"
-          />
-          <Card className="week__item" sx={{ maxWidth: 345 }}>
-            <CardActionArea>
-              <div className="week__card-top">
-                <div className="week__card-wrapper">
-                  <h3 className="week__card-title">Canada</h3>
-                  <h2 className="week__card-price">$800</h2>
-                </div>
-
-                <div className="week__card-box">
-                  <div>
-                    <i className="fa-solid fa-users"></i>
-                    <span className="week__card-subtext">300 check Ins</span>
-                  </div>
-
-                  <div>
-                    <p className="week__card-subtext">/Person</p>
-                  </div>
-                </div>
-              </div>
-
-              <hr className="week__hr" />
-
-              <CardContent>
-                <Typography gutterBottom variant="h7" component="div">
-                  Deal Includes
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-car"></i>
-                  <span className="week__card-subtext">
-                    5 days Trip Hotel includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-plane"></i>
-                  <span className="week__card-subtext">
-                    Airplan Bill includes
-                  </span>
-                </Typography>
-                <Typography variant="body2" color="text.secondary">
-                  <i className="fa-solid fa-building"></i>
-                  <span className="week__card-subtext">
-                    Dailiy places visit
-                  </span>
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-            <CardActions>
-              <Button variant="contained">Make a Reservation</Button>
+              <Button variant="contained">{t("Make a Reservation")}</Button>
             </CardActions>
           </Card>
         </div>

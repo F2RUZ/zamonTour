@@ -1,11 +1,20 @@
 import "./navbar.scss";
 import logo from "../../assets/img/zamon.svg";
 import { useState } from "react";
+import i18next from "i18next";
+import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const [showNav, setShownav] = useState(false);
+  const { t } = useTranslation();
 
   const handleNavbar = () => {
     setShownav(!showNav);
+  };
+
+  const handleChange = (e) => {
+    const selectedLanguage = e.target.value;
+
+    i18next.changeLanguage(selectedLanguage);
   };
   return (
     <div className="navbar">
@@ -21,7 +30,7 @@ const Navbar = () => {
               className="navbar__item"
             >
               <a href="#" className="navbar__link">
-                Home
+                {t("Home")}
               </a>
             </li>
             <li
@@ -31,7 +40,7 @@ const Navbar = () => {
               className="navbar__item"
             >
               <a href="#explore" className="navbar__link">
-                About
+                {t("About")}
               </a>
             </li>{" "}
             <li
@@ -41,7 +50,7 @@ const Navbar = () => {
               className="navbar__item"
             >
               <a href="#week" className="navbar__link">
-                Tours
+                {t("Tour")}
               </a>
             </li>{" "}
             <li
@@ -51,15 +60,17 @@ const Navbar = () => {
               className="navbar__item"
             >
               <a href="#reservation" className="navbar__link">
-                Contacts
+                {t("Contact")}
               </a>
             </li>
           </ul>
 
           <div className="navbar__languages">
-            <p className="navbar__laguage">Uz</p>
-            <p className="navbar__laguage">Eng</p>
-            <p className="navbar__laguage">Ru</p>
+            <select onChange={handleChange} name="lang" id="lang">
+              <option selected value="uz">Uz</option>
+              <option value="en">En</option>
+              <option value="ru">Ru</option>
+            </select>
             <a target="_blank" href="https://web.telegram.org/">
               <p className="navbar__laguage">
                 <i className="fa-brands fa-telegram"></i>

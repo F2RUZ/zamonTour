@@ -16,11 +16,11 @@
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 
   &__title {
@@ -31,8 +31,9 @@
     font-weight: 700;
     text-transform: capitalize;
     color: #2a2a2a;
-    font-family: "Poppins";
+    font-family: "Poppins" sans-serif;
     text-align: center;
+    overflow-y: hidden;
   }
   &__text {
     text-align: center;
@@ -40,13 +41,13 @@
     font-size: 15px;
     line-height: 30px;
     color: #afafaf;
-    font-family: "Poppins";
+    font-family: "Poppins" sans-serif;
   }
   &__slider {
     margin: 100px auto;
     width: 90%;
     margin-left: 200px;
-    padding: 10px ;
+    padding: 10px;
     overflow-y: hidden;
   }
 
@@ -61,11 +62,11 @@
       display: -ms-flexbox;
       display: flex;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       margin-bottom: 10px;
     }
     &-price {
@@ -88,12 +89,12 @@
     padding: 30px;
     position: absolute;
     left: 25%;
-    bottom: 8%;
+    bottom: 9%;
     border-radius: 20px;
   }
   &__pic {
-    width:300px !important;
-    height: 400px;
+    width: 300px !important;
+    height: 450px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
   }
@@ -115,7 +116,7 @@
       margin-left: 0;
       margin: 100px auto;
     }
-    &__button{
+    &__button {
       font-size: 0.8rem !important;
     }
 
@@ -127,12 +128,13 @@
     &__card {
       height: 400px;
 
-      &-subtext{
+      &-subtext {
         font-size: 0.65rem;
       }
     }
     &__pic {
-      width:300px !important;
+      width: 300px !important;
+      height: 400px;
     }
   }
 }

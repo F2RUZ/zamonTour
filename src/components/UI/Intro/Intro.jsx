@@ -11,7 +11,10 @@ import "./intro.scss";
 //MaterialUI
 
 import Button from "@mui/material/Button";
+import { useTranslation } from "react-i18next";
 const Intro = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="intro">
       <Swiper
@@ -28,10 +31,10 @@ const Intro = () => {
           <div className="intro__slide">
             <div className="intro__top">
               <p className="intro__text">
-                Take a Glimpse Into The Beautiful City Of:
+                {t("Take a Glimpse Into The Beautiful City Of:")}
               </p>
-              <h2 className="intro__title">Istanbul</h2>
-              <Button variant="contained">Go There</Button>
+              <h2 className="intro__title">{t("Istanbul")}</h2>
+              <Button variant="contained">{t("Go There")}</Button>
             </div>
 
             <div className="intro__bottom">
@@ -41,7 +44,7 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">Population</p>
+                  <p className="intro__card-text">{t("Population")}</p>
                   <h3 className="intro__card-title">69.86 M</h3>
                 </div>
               </div>
@@ -51,7 +54,7 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">Territory:</p>
+                  <p className="intro__card-text">{t("Territory")}</p>
                   <h3 className="intro__card-title">44.48 M</h3>
                 </div>
               </div>{" "}
@@ -61,11 +64,11 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">AVG Price:</p>
+                  <p className="intro__card-text">{t("AVG Price")}</p>
                   <h3 className="intro__card-title">$946.000</h3>
                 </div>
               </div>{" "}
-              <Button variant="contained">Explore More</Button>
+              <Button variant="contained">{t("Explore More")}</Button>
             </div>
           </div>
         </SwiperSlide>
@@ -122,7 +125,9 @@ const Intro = () => {
               </p>
               <h2 className="intro__title">Antalia</h2>
               <a href="#reservation">
-                <Button type="button" variant="contained">Go There</Button>
+                <Button type="button" variant="contained">
+                  Go There
+                </Button>
               </a>
             </div>
 
