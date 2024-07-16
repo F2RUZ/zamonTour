@@ -179,6 +179,21 @@ input:checked + label .description {
   background-repeat: no-repeat;
 }
 
+.card[for="c5"] {
+  background-image: url("https://images.pexels.com/photos/2116719/pexels-photo-2116719.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card[for="c6"] {
+  background-image: url("https://i.pinimg.com/originals/83/74/8e/83748eb4aec6de3743758821172c07b0.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
 
 @media only screen and (max-width: 1100px) {
   .location {

@@ -58,6 +58,31 @@ const Location = () => {
           </div>
         </label>
 
+        <input type="radio" name="slide" id="c5" />
+        <label htmlFor="c5" className="card">
+          <div className="row">
+            {/* <div className="icon">
+              <i className="fa-regular fa-square-plus"></i>
+            </div> */}
+            <div className="description">
+              <h4>Sharm El-Sheikh</h4>
+              <p>Population: 3M</p>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c6" />
+        <label htmlFor="c6" className="card">
+          <div className="row">
+            {/* <div className="icon">
+              <i className="fa-regular fa-square-plus"></i>
+            </div> */}
+            <div className="description">
+              <h4>Sharm El-Sheikh</h4>
+              <p>Population: 3M</p>
+            </div>
+          </div>
+        </label>
+
     
       </div>
     </div>
