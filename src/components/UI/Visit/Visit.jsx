@@ -48,9 +48,11 @@ const Visit = () => {
                       {t("United Arab Emirated")}
                     </Typography>
                   </div>
-                  <Button variant="contained" href="#contained-buttons">
-                    {t("Explore more")}
-                  </Button>
+                  <a href="#reservation">
+                    <Button variant="contained">
+                      {t("Make a Reservation")}
+                    </Button>
+                  </a>
                 </div>
                 <Typography
                   className="explore__card-text"
@@ -72,6 +74,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
                     {t("8.66 Mil People")}
                   </Typography>
@@ -83,6 +86,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"5px"}
                   >
                     {t("41.290 km2")}
                   </Typography>
@@ -94,6 +98,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
                     {t("$1.100.200")}
                   </Typography>
@@ -101,7 +106,7 @@ const Visit = () => {
               </div>
 
               <hr className="explore__hr" />
-              <a href="#" className="visit__links">
+              <a href="#maps" className="visit__links">
                 {t("Need Directions ?")}{" "}
                 <i className="fa-solid fa-right-long"></i>
               </a>
@@ -139,16 +144,20 @@ const Visit = () => {
                       {t("Turkey")}
                     </Typography>
                   </div>
-                  <Button variant="contained" href="#contained-buttons">
-                    {t("Explore more")}
-                  </Button>
+                  <a href="#reservation">
+                    <Button variant="contained">
+                      {t("Make a Reservation")}
+                    </Button>
+                  </a>
                 </div>
                 <Typography
                   className="explore__card-text"
                   variant="body2"
                   color="text.secondary"
                 >
-                  {t(`Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park, which features Aqua Land (a waterslide-fanatic's dream) and Dolphin Land (home to dolphins, sea lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate.`)}
+                  {t(
+                    `Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park, which features Aqua Land (a waterslide-fanatic's dream) and Dolphin Land (home to dolphins, sea lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate.`
+                  )}
                 </Typography>
               </CardContent>
 
@@ -161,6 +170,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
                     {t("44.48 Mil People")}
                   </Typography>
@@ -172,6 +182,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"6px"}
                   >
                     {t("275.400 km2")}
                   </Typography>
@@ -183,6 +194,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
                     {t("$946.000")}
                   </Typography>
@@ -190,7 +202,7 @@ const Visit = () => {
               </div>
 
               <hr className="explore__hr" />
-              <a href="#" className="visit__links">
+              <a href="#maps" className="visit__links">
                 {t("Need Directions ?")}{" "}
                 <i className="fa-solid fa-right-long"></i>
               </a>
@@ -216,7 +228,7 @@ const Visit = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      {t('Sharm El-Sheikh')}
+                      {t("Sharm El-Sheikh")}
                     </Typography>
                     <Typography
                       className="visit__maintext"
@@ -224,19 +236,23 @@ const Visit = () => {
                       variant="h8"
                       component="div"
                     >
-                      {t('Egypt')}
+                      {t("Egypt")}
                     </Typography>
                   </div>
-                  <Button variant="contained" href="#contained-buttons">
-                    {t('Explore more')}
-                  </Button>
+                  <a href="#reservation">
+                    <Button variant="contained">
+                      {t("Make a Reservation")}
+                    </Button>
+                  </a>
                 </div>
                 <Typography
                   className="explore__card-text"
                   variant="body2"
                   color="text.secondary"
                 >
-                  {t(`Sharm El Sheikh is the center of tourism action in Sinai Peninsula and it has the world top diving sites. Specially the underwater wonders of Ras Mohammed national park that took Sharm city to whole different level. The city has diving and shipwreck sites that attract both advanced and recreational divers from around the world to discover the un parallel marine life deep down the red sea.`)}
+                  {t(
+                    `Sharm El Sheikh is the center of tourism action in Sinai Peninsula and it has the world top diving sites. Specially the underwater wonders of Ras Mohammed national park that took Sharm city to whole different level. The city has diving and shipwreck sites that attract both advanced and recreational divers from around the world to discover the un parallel marine life deep down the red sea.`
+                  )}
                 </Typography>
               </CardContent>
 
@@ -249,8 +265,9 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
-                    67.41 Mil People
+                    {t("44.48 Mil People")}
                   </Typography>
                 </div>
                 <div className="visit__box">
@@ -260,8 +277,9 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"5px"}
                   >
-                    551.500 km2
+                    {t("275.400 km2")}
                   </Typography>
                 </div>{" "}
                 <div className="visit__box">
@@ -271,15 +289,17 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
-                    $425.600
+                    {t("$946.000")}
                   </Typography>
                 </div>
               </div>
 
               <hr className="explore__hr" />
-              <a href="#" className="visit__links">
-                Need Directions ? <i className="fa-solid fa-right-long"></i>
+              <a href="#maps" className="visit__links">
+                {t("Need Directions ?")}{" "}
+                <i className="fa-solid fa-right-long"></i>
               </a>
             </div>
           </div>
@@ -314,16 +334,20 @@ const Visit = () => {
                       {t("Turkey")}
                     </Typography>
                   </div>
-                  <Button variant="contained" href="#contained-buttons">
-                    {t("Explore more")}
-                  </Button>
+                  <a href="#reservation">
+                    <Button variant="contained">
+                      {t("Make a Reservation")}
+                    </Button>
+                  </a>
                 </div>
                 <Typography
                   className="explore__card-text"
                   variant="body2"
                   color="text.secondary"
                 >
-                  {t(`Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It is located in north-western part of Turkey, divided into European and Asian side by Bosphorus, which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two continents.`)}
+                  {t(
+                    `Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It is located in north-western part of Turkey, divided into European and Asian side by Bosphorus, which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two continents.`
+                  )}
                 </Typography>
               </CardContent>
 
@@ -336,6 +360,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
                     {t("67.41 Mil People")}
                   </Typography>
@@ -347,6 +372,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"5px"}
                   >
                     {t("551.500 km2")}
                   </Typography>
@@ -358,6 +384,7 @@ const Visit = () => {
                     gutterBottom
                     variant="h8"
                     component="div"
+                    marginTop={"8px"}
                   >
                     {t("$425.600")}
                   </Typography>
@@ -365,7 +392,7 @@ const Visit = () => {
               </div>
 
               <hr className="explore__hr" />
-              <a href="#" className="visit__links">
+              <a href="#maps" className="visit__links">
                 {t("Need Directions ?")}{" "}
                 <i className="fa-solid fa-right-long"></i>
               </a>

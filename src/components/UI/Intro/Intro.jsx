@@ -34,7 +34,9 @@ const Intro = () => {
                 {t("Take a Glimpse Into The Beautiful City Of:")}
               </p>
               <h2 className="intro__title">{t("Istanbul")}</h2>
-              <Button variant="contained">{t("Go There")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Go There")}</Button>
+            </a>
             </div>
 
             <div className="intro__bottom">
@@ -68,7 +70,9 @@ const Intro = () => {
                   <h3 className="intro__card-title">$946.000</h3>
                 </div>
               </div>{" "}
-              <Button variant="contained">{t("Explore More")}</Button>
+            <a href="#explore">
+                <Button variant="contained">{t("Explore More")}</Button>
+            </a>
             </div>
           </div>
         </SwiperSlide>
@@ -79,7 +83,9 @@ const Intro = () => {
               {t("Take a Glimpse Into The Beautiful City Of:")}
               </p>
               <h2 className="intro__title">{t("Dubai")}</h2>
-              <Button variant="contained">Go There</Button>
+             <a href="#forms">
+             <Button variant="contained">{t('Go There')}</Button>
+             </a>
             </div>
 
             <div className="intro__bottom">
@@ -113,7 +119,9 @@ const Intro = () => {
                   <h3 className="intro__card-title">$425.600</h3>
                 </div>
               </div>{" "}
-              <Button variant="contained">{t("Explore More")}</Button>
+            <a href="#explore">
+                <Button variant="contained">{t("Explore More")}</Button>
+            </a>
             </div>
           </div>
         </SwiperSlide>
@@ -148,7 +156,7 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">{t("Terretory")}:</p>
+                  <p className="intro__card-text">{t("Territory")}:</p>
                   <h3 className="intro__card-title">41.290 KM2</h3>
                 </div>
               </div>{" "}
@@ -158,11 +166,13 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">AVG Price:</p>
+                  <p className="intro__card-text">{t('AVG Price')}</p>
                   <h3 className="intro__card-title">$1.100.200</h3>
                 </div>
               </div>{" "}
-              <Button variant="contained">{t("Explore More")}</Button>
+            <a href="#explore">
+                <Button variant="contained">{t("Explore More")}</Button>
+            </a>
             </div>
           </div>
         </SwiperSlide>
@@ -173,7 +183,9 @@ const Intro = () => {
               {t("Take a Glimpse Into The Beautiful City Of:")}
               </p>
               <h2 className="intro__title">{t("Sharm El-Sheikh")}</h2>
-              <Button variant="contained">{t("Go There")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Go There")}</Button>
+            </a>
             </div>
 
             <div className="intro__bottom">
@@ -193,7 +205,7 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">{t("Teretory")}</p>
+                  <p className="intro__card-text">{t("Territory")}</p>
                   <h3 className="intro__card-title">11.86 </h3>
                 </div>
               </div>{" "}
@@ -203,12 +215,14 @@ const Intro = () => {
                 </span>
 
                 <div className="intro__card-left">
-                  <p className="intro__card-text">AVG Price:</p>
+                  <p className="intro__card-text">{t('AVG Price')}</p>
                   <h3 className="intro__card-title">690.86 M</h3>
                 </div>
               </div>{" "}
               <a href="#reservation">
-                <Button variant="contained">{t("Explore More")}</Button>
+              <a href="#explore">
+                  <Button variant="contained">{t("Explore More")}</Button>
+              </a>
               </a>
             </div>
           </div>

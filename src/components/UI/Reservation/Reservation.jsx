@@ -1,20 +1,108 @@
 import Button from "@mui/material/Button";
 import "./reservation.scss";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import { useTranslation } from "react-i18next";
 import Typography from "@mui/material/Typography";
-import { CardActionArea } from "@mui/material";
 const Reservation = () => {
+  const { t } = useTranslation();
   return (
     <div id="reservation" className="reservation">
       <div className="reservation__wrapper">
-        <p className="reservation__subtext">Book Prefered Deal Here</p>
+        <p className="reservation__subtext">{t("Book Prefered Deal Here")}</p>
         <hr className="explore__hr reservation__hr" />
-        <h2 className="reservation__title">Make Your Reservation</h2>
-        <Button variant="outlined">Descover more</Button>
+        <h2 className="reservation__title">{t("Make Your Reservation")}</h2>
+      <a href="#forms">
+      <Button variant="outlined">{t("Discover More")}</Button>
+      </a>
 
         <div className="reservation__cards">
-          <Card className="reservation__card" sx={{ maxWidth: 400 }} >
+          <div className="reservation__card">
+            <span className="reservation__sircle intro__sircle">
+              <i className="fa-solid fa-location-dot"></i>
+            </span>
+
+            <Typography
+              fontFamily={"sans-serif"}
+              fontWeight="700"
+              gutterBottom
+              variant="h6"
+              component="div"
+              textAlign="center"
+            >
+              {t("Make a Phone Call")}
+            </Typography>
+            <a href="tel:+998910050505">
+              <Typography
+                fontFamily={"sans-serif"}
+                variant="body2"
+                color="text.secondary"
+                textAlign="center"
+              >
+                +998910057989
+              </Typography>
+            </a>
+          </div>
+          <div className="reservation__card">
+            <span className="reservation__sircle intro__sircle">
+              <i className="fa-solid fa-location-dot"></i>
+            </span>
+
+            <Typography
+              fontFamily={"sans-serif"}
+              fontWeight="700"
+              gutterBottom
+              variant="h6"
+              component="div"
+              textAlign="center"
+            >
+              {t("Contact Us via Email")}
+            </Typography>
+            <a href="mailto:zamantaur@g,ail.com">
+              <Typography
+                fontFamily={"sans-serif"}
+                variant="body2"
+                color="text.secondary"
+                textAlign="center"
+              >
+                zamonbiznestour@mail.ru
+              </Typography>
+            </a>
+          </div>
+          <div className="reservation__card">
+            <span className="reservation__sircle intro__sircle">
+              <i className="fa-solid fa-location-dot"></i>
+            </span>
+
+            <Typography
+              fontFamily={"sans-serif"}
+              fontWeight="700"
+              gutterBottom
+              variant="h6"
+              component="div"
+              textAlign="center"
+            >
+              {t("Visit Our Offices")}
+            </Typography>
+            <a href="#">
+              <Typography
+                fontFamily={"sans-serif"}
+                variant="body2"
+                color="text.secondary"
+                textAlign="center"
+              >
+                {t("15/25, Chilanzar - 9, Tashkent city")}
+              </Typography>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Reservation;
+
+{
+  /* <Card className="reservation__card" sx={{ maxWidth: 400 }} >
             <CardActionArea>
               <span className="reservation__sircle intro__sircle">
                 <i className="fa-solid fa-phone"></i>
@@ -40,36 +128,11 @@ const Reservation = () => {
                 </Typography>
               </CardContent>
             </CardActionArea>
-          </Card>
+          </Card> */
+}
 
-          <Card className="reservation__card" sx={{ maxWidth: 400 }}>
-            <CardActionArea>
-              <span className="reservation__sircle intro__sircle">
-                <i className="fa-solid fa-envelope"></i>
-              </span>
-              <CardContent>
-                <Typography
-                  fontFamily="Poppins"
-                  fontWeight="700"
-                  gutterBottom
-                  variant="h6"
-                  component="div"
-                  textAlign="center"
-                >
-                  Contact Us via Email
-                </Typography>
-                <Typography
-                  textAlign="center"
-                  variant="body2"
-                  color="text.secondary"
-                >
-                  zamonbiznes@mail.ru
-                </Typography>
-              </CardContent>
-            </CardActionArea>
-          </Card>
-
-          <Card className="reservation__card" sx={{ maxWidth: 400 }}>
+{
+  /* <Card className="reservation__card" sx={{ maxWidth: 400 }}>
             <CardActionArea>
               <span className="reservation__sircle intro__sircle">
                 <i className="fa-solid fa-location-dot"></i>
@@ -95,11 +158,5 @@ const Reservation = () => {
                 </Typography>
               </CardContent>
             </CardActionArea>
-          </Card>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default Reservation;
+          </Card> */
+}

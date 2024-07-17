@@ -122,7 +122,9 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+                 <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -184,7 +186,9 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+                 <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -246,7 +250,9 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+                 <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -308,7 +314,9 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+                 <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -370,7 +378,9 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+                 <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -432,7 +442,9 @@ const Visa = () => {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+                 <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>

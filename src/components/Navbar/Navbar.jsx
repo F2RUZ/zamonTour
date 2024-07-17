@@ -12,7 +12,6 @@ const Navbar = () => {
   };
 
   const handleChange = (e) => {
-   
     const selectedLanguage = e.target.value;
 
     i18next.changeLanguage(selectedLanguage);
@@ -68,7 +67,9 @@ const Navbar = () => {
 
           <div className="navbar__languages">
             <select onChange={handleChange} name="lang" id="lang">
-              <option selected value="uz">Uz</option>
+              <option selected value="uz">
+                Uz
+              </option>
               <option value="en">En</option>
               <option value="ru">Ru</option>
             </select>

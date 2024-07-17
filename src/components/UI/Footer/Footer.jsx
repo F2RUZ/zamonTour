@@ -1,18 +1,21 @@
 import React from "react";
 import "./footer.scss";
 
+import { useTranslation } from "react-i18next";
+
 import Button from "@mui/material/Button";
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="footer__wrapper">
         <div className="footer__left">
-          <h2 className="footer__title">ARE YOU LOOKING TO TRAVEL ?</h2>
+          <h2 className="footer__title">{t("ARE YOU LOOKING TO TRAVEL ?")}</h2>
           <p className="footer__text">
-            Make A Reservation By Clicking The Button
+            {t('Make A Reservation By Clicking The Button')}
           </p>
         </div>
-        <Button variant="contained">Book Yours Now</Button>
+        <Button variant="contained">{t('Book Yours Now')}</Button>
       </div>
     </div>
   );

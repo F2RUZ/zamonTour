@@ -3,7 +3,7 @@ import "./maps.scss";
 
 const Maps = () => {
   return (
-    <div className="maps">
+    <div id="maps" className="maps">
       <div className="maps__wrapper">
         <iframe
         className="maps__map"

@@ -62,7 +62,7 @@ function Week() {
           <CardMedia
             component="img"
             height="450"
-            image='https://zamontour.uz/assets/images/deals-04.jpg'
+            image="https://zamontour.uz/assets/images/deals-04.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -94,7 +94,12 @@ function Week() {
                 <Typography gutterBottom variant="h7" component="div">
                   {t("Deal Includes")}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography
+                  display={"flex"}
+                  alignItems={'center'}
+                  variant="body2"
+                  color="text.secondary"
+                >
                   <i className="fa-solid fa-car"></i>
                   <span className="week__card-subtext">
                     {t("5 Days Trip > Hotel Included")}
@@ -115,7 +120,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -124,7 +131,7 @@ function Week() {
           <CardMedia
             component="img"
             height="450"
-            image='https://zamontour.uz/assets/images/deals-01.jpg'
+            image="https://zamontour.uz/assets/images/deals-01.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -177,7 +184,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -185,7 +194,7 @@ function Week() {
           <CardMedia
             component="img"
             height="450"
-            image='https://zamontour.uz/assets/images/offers-01.jpg'
+            image="https://zamontour.uz/assets/images/offers-01.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -238,7 +247,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -246,7 +257,7 @@ function Week() {
           <CardMedia
             component="img"
             height="450"
-            image='https://zamontour.uz/assets/images/usa1.jpg'
+            image="https://zamontour.uz/assets/images/usa1.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -299,7 +310,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -307,7 +320,7 @@ function Week() {
           <CardMedia
             component="img"
             height="450"
-            image='https://zamontour.uz/assets/images/europe2.jpg'
+            image="https://zamontour.uz/assets/images/europe2.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -360,7 +373,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -368,7 +383,7 @@ function Week() {
           <CardMedia
             component="img"
             height="450"
-            image='https://zamontour.uz/assets/images/cand.jpg'
+            image="https://zamontour.uz/assets/images/cand.jpg"
             alt="green iguana"
             className="week__pic"
           />
@@ -421,7 +436,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>
@@ -482,7 +499,9 @@ function Week() {
               </CardContent>
             </CardActionArea>
             <CardActions>
-              <Button variant="contained">{t("Make a Reservation")}</Button>
+            <a href="#forms">
+                <Button variant="contained">{t("Make a Reservation")}</Button>
+            </a>
             </CardActions>
           </Card>
         </div>

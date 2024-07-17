@@ -48,9 +48,11 @@ const Explore = () => {
                       {t("Whole world")}
                     </Typography>
                   </div>
-                  <Button variant="contained" href="#contained-buttons">
-                    {t("Explore more")}
-                  </Button>
+                  <a href="#reservation">
+                    <Button variant="contained">
+                      {t("Make a Reservation")}
+                    </Button>
+                  </a>
                 </div>
                 <Typography
                   className="explore__card-text"
@@ -92,9 +94,11 @@ const Explore = () => {
                       {t("Global Destinations")}
                     </Typography>
                   </div>
-                  <Button variant="contained" href="#contained-buttons">
-                    {t("Explore more")}
-                  </Button>
+                  <a href="#reservation">
+                    <Button variant="contained">
+                      {t("Make a Reservation")}
+                    </Button>
+                  </a>
                 </div>
                 <Typography
                   className="explore__card-text"
