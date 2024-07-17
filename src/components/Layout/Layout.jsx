@@ -14,7 +14,7 @@ import FooterBottom from "../UI/FooterBottom/FooterBottom";
 
 const Layout = () => {
   return (
-    <>
+    <div className="wrapper">
       <Navbar />
       <Intro />
       <Week />
@@ -27,7 +27,7 @@ const Layout = () => {
       <Forms />
       <Footer />
       <FooterBottom />
-    </>
+    </div>
   );
 };
 

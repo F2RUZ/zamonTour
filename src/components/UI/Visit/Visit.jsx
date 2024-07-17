@@ -34,7 +34,7 @@ const Visit = () => {
                     <Typography
                       gutterBottom
                       variant="h5"
-                      className="explore__subtitle"
+                      className="explore__subtitle visit__subtitle"
                       component="div"
                     >
                       {t("Dubai")}
@@ -130,7 +130,7 @@ const Visit = () => {
                     <Typography
                       gutterBottom
                       variant="h5"
-                      className="explore__subtitle"
+                      className="explore__subtitle visit__subtitle"
                       component="div"
                     >
                       {t("Antalya")}
@@ -225,7 +225,7 @@ const Visit = () => {
                     <Typography
                       gutterBottom
                       variant="h5"
-                      className="explore__subtitle"
+                      className="explore__subtitle visit__subtitle"
                       component="div"
                     >
                       {t("Sharm El-Sheikh")}
@@ -320,7 +320,7 @@ const Visit = () => {
                     <Typography
                       gutterBottom
                       variant="h5"
-                      className="explore__subtitle"
+                      className="explore__subtitle visit__subtitle"
                       component="div"
                     >
                       {t("Istanbul")}

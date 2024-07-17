@@ -1,21 +1,38 @@
 import "./navbar.scss";
 import logo from "../../assets/img/zamon.svg";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const [showNav, setShownav] = useState(false);
   const { t } = useTranslation();
+  // localStorage dan tanlagan tilni olish
+  const i18nextLng = localStorage.getItem("i18nextLng")
+    ? localStorage.getItem("i18nextLng")
+    : "ru";
 
+  // tanlagan til holatini saqlash uchun state
+  const [tanlanganTil, setTanlanganTil] = useState(i18nextLng);
+
+  // useEffect yordamida tanlangan til o'zgarganda localStorage ga saqlash
+  useEffect(() => {
+    localStorage.setItem("i18nextLng", tanlanganTil);
+  }, [tanlanganTil]);
+
+  const changeLanguage = (till) => {
+    setTanlanganTil(till);
+  };
+
+  //Open navbar or
   const handleNavbar = () => {
     setShownav(!showNav);
   };
 
   const handleChange = (e) => {
     const selectedLanguage = e.target.value;
-
     i18next.changeLanguage(selectedLanguage);
   };
+
   return (
     <div className="navbar">
       <div className="navbar__wrapper">
@@ -67,11 +84,30 @@ const Navbar = () => {
 
           <div className="navbar__languages">
             <select onChange={handleChange} name="lang" id="lang">
-              <option selected value="uz">
+              <option
+                onClick={() => {
+                  changeLanguage("uz");
+                }}
+                value="uz"
+              >
                 Uz
               </option>
-              <option value="en">En</option>
-              <option value="ru">Ru</option>
+              <option
+                onClick={() => {
+                  changeLanguage("en");
+                }}
+                value="en"
+              >
+                En
+              </option>
+              <option
+                onClick={() => {
+                  changeLanguage("ru");
+                }}
+                value="ru"
+              >
+                Ru
+              </option>
             </select>
             <a target="_blank" href="https://web.telegram.org/">
               <p className="navbar__laguage">

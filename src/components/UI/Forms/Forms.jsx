@@ -3,6 +3,7 @@ import "./forms.scss";
 import axios from "axios";
 import { FormControl, Input, FormGroup, Button } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { Bounce, toast } from "react-toastify";
 const Forms = () => {
   const [name, setName] = useState("");
   const [number, setNumber] = useState(0);
@@ -38,13 +39,47 @@ const Forms = () => {
           text: JSON.stringify(userData),
         },
       })
-        .then((data) => alert("Malumot yuborildi..."))
-        .catch((error) => alert(error))
+        .then((data) => {
+          toast.success("🦄 Malumot yuborildi Tezda aloqaga chiqamiz !!! ", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        })
+        .catch((error) => {
+          toast.error(`${error}`, {
+            position: "top-left",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            transition: Bounce,
+          });
+        })
         .finally(() => {
           setLoading(false);
         });
     } else {
-      alert("asabga tegmaeee");
+      toast.warn("🦄 Iltimos malumot kiriting!! ", {
+        position: "top-left",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "colored",
+        transition: Bounce,
+      });
     }
 
     e.target.reset();
@@ -61,6 +96,7 @@ const Forms = () => {
             <div className="maps__left">
               <FormControl className="maps__control" size="small" focused>
                 <Input
+                  required
                   onChange={(e) => {
                     setName(e.target.value.trim());
                   }}
@@ -71,6 +107,7 @@ const Forms = () => {
 
               <FormControl className="maps__control" size="small" focused>
                 <Input
+                  required
                   type="text"
                   placeholder={t("Your surname  example : Smith")}
                   onChange={(e) => {
@@ -82,6 +119,7 @@ const Forms = () => {
             <div className="maps__right">
               <FormControl className="maps__control">
                 <Input
+                  required
                   onChange={(e) => {
                     setNumber(e.target.value.trim());
                   }}
@@ -91,6 +129,7 @@ const Forms = () => {
               </FormControl>
               <FormControl className="maps__control">
                 <Input
+                  required
                   onChange={(e) => {
                     setDate(e.target.value.trim());
                   }}
@@ -103,6 +142,7 @@ const Forms = () => {
 
           <FormControl>
             <Input
+              required
               onChange={(e) => {
                 setCountry(e.target.value.trim());
               }}

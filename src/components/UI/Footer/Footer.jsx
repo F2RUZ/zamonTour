@@ -12,10 +12,12 @@ const Footer = () => {
         <div className="footer__left">
           <h2 className="footer__title">{t("ARE YOU LOOKING TO TRAVEL ?")}</h2>
           <p className="footer__text">
-            {t('Make A Reservation By Clicking The Button')}
+            {t("Make A Reservation By Clicking The Button")}
           </p>
         </div>
-        <Button variant="contained">{t('Book Yours Now')}</Button>
+        <a href="tel:+998910050508">
+          <Button variant="contained">{t("Book Yours Now")}</Button>
+        </a>
       </div>
     </div>
   );

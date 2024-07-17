@@ -76,13 +76,12 @@
     -webkit-box-pack: space-evenly;
     -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
-    gap: 50px;
+    gap: 20px;
     width: 70%;
-    min-height: 100px;
+    height: 100px;
     margin: auto;
     border-radius: 90px;
     background-color: whitesmoke;
-    padding: 20px;
   }
 
   &__card {
@@ -117,8 +116,8 @@
     -ms-flex-pack: center;
     justify-content: center;
     border: 1px solid #22b3c1;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
   }
   &__sircle i {
@@ -178,10 +177,15 @@
     &__card-title {
       font-size: 1rem;
     }
+    &__slide{
+      height: 140vh;
+    }
     &__bottom {
       width: 80%;
+      height: 400px;
       flex-direction: column;
       border-radius: 15px;
+      margin-top: 120px;
     }
   }
 }
