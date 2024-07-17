@@ -49,10 +49,14 @@
   }
 
   &__links {
+    display:flex;
+    align-items: center;
+    gap: 5px;
     margin-top: 50px !important;
     font-size: 14px;
     color: #22b3c1;
     font-weight: 500;
+    font-family: 'Poppins' sans-serif;
   }
 }
 

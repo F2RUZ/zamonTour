@@ -1,17 +1,20 @@
 import React from "react";
 import "./visit.scss";
 import { Button, CardContent, CardMedia, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
 const Visit = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="visit">
       <div className="visit__wrapper">
         <h2 className="visit__title explore__title">
-          Visit One Of Our Countries Now
+          {t("Visit One Of Our Countries Now")}
         </h2>
         <p className="explore__text visit__text">
-          Discover the best offers in each city, curated just for you. Immerse
-          yourself in a world of savings and indulge in unparalleled
-          experiences.
+          {t(
+            "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences."
+          )}
         </p>
 
         <div className="visit__cards">
@@ -34,7 +37,7 @@ const Visit = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      Dubai
+                      {t("Dubai")}
                     </Typography>
                     <Typography
                       className="visit__maintext"
@@ -42,11 +45,11 @@ const Visit = () => {
                       variant="h8"
                       component="div"
                     >
-                      United Arab Emirated
+                      {t("United Arab Emirated")}
                     </Typography>
                   </div>
                   <Button variant="contained" href="#contained-buttons">
-                    Explore more
+                    {t("Explore more")}
                   </Button>
                 </div>
                 <Typography
@@ -54,13 +57,9 @@ const Visit = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Dubai is a city and emirate in the United Arab Emirates known
-                  for luxury shopping, ultramodern architecture and a lively
-                  nightlife scene. Burj Khalifa, an 830m-tall tower, dominates
-                  the skyscraper-filled skyline. At its foot lies Dubai
-                  Fountain, with jets and lights choreographed to music. On
-                  artificial islands just offshore is Atlantis, The Palm, a
-                  resort with water and marine-animal parks.
+                  {t(
+                    `Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.`
+                  )}
                 </Typography>
               </CardContent>
 
@@ -74,7 +73,7 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    8.66 Mil People
+                    {t("8.66 Mil People")}
                   </Typography>
                 </div>
                 <div className="visit__box">
@@ -85,7 +84,7 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    41.290 km2
+                    {t("41.290 km2")}
                   </Typography>
                 </div>{" "}
                 <div className="visit__box">
@@ -96,14 +95,15 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    $1.100.200
+                    {t("$1.100.200")}
                   </Typography>
                 </div>
               </div>
 
               <hr className="explore__hr" />
               <a href="#" className="visit__links">
-                Need Directions ? <i className="fa-solid fa-right-long"></i>
+                {t("Need Directions ?")}{" "}
+                <i className="fa-solid fa-right-long"></i>
               </a>
             </div>
           </div>
@@ -128,7 +128,7 @@ const Visit = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      Antalia
+                      {t("Antalya")}
                     </Typography>
                     <Typography
                       className="visit__maintext"
@@ -136,11 +136,11 @@ const Visit = () => {
                       variant="h8"
                       component="div"
                     >
-                      Turkey
+                      {t("Turkey")}
                     </Typography>
                   </div>
                   <Button variant="contained" href="#contained-buttons">
-                    Explore more
+                    {t("Explore more")}
                   </Button>
                 </div>
                 <Typography
@@ -148,13 +148,7 @@ const Visit = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Antalya is the fastest-growing city in Turkey, and tourists
-                  from around the world are discovering its fabulous mix of
-                  great beaches and traditional Turkish culture. Kids will love
-                  the Beach Park, which features Aqua Land (a
-                  waterslide-fanatic's dream) and Dolphin Land (home to
-                  dolphins, sea lions and white whales). Make sure to explore
-                  the old town center and to see Hadrian's Gate.
+                  {t(`Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park, which features Aqua Land (a waterslide-fanatic's dream) and Dolphin Land (home to dolphins, sea lions and white whales). Make sure to explore the old town center and to see Hadrian's Gate.`)}
                 </Typography>
               </CardContent>
 
@@ -168,7 +162,7 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    44.48 Mil People
+                    {t("44.48 Mil People")}
                   </Typography>
                 </div>
                 <div className="visit__box">
@@ -179,7 +173,7 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    275.400 km2
+                    {t("275.400 km2")}
                   </Typography>
                 </div>{" "}
                 <div className="visit__box">
@@ -190,14 +184,15 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    $946.000
+                    {t("$946.000")}
                   </Typography>
                 </div>
               </div>
 
               <hr className="explore__hr" />
               <a href="#" className="visit__links">
-                Need Directions ? <i className="fa-solid fa-right-long"></i>
+                {t("Need Directions ?")}{" "}
+                <i className="fa-solid fa-right-long"></i>
               </a>
             </div>
           </div>
@@ -221,7 +216,7 @@ const Visit = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      Sharm El-Sheikh
+                      {t('Sharm El-Sheikh')}
                     </Typography>
                     <Typography
                       className="visit__maintext"
@@ -229,11 +224,11 @@ const Visit = () => {
                       variant="h8"
                       component="div"
                     >
-                      Egypt
+                      {t('Egypt')}
                     </Typography>
                   </div>
                   <Button variant="contained" href="#contained-buttons">
-                    Explore more
+                    {t('Explore more')}
                   </Button>
                 </div>
                 <Typography
@@ -241,13 +236,7 @@ const Visit = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Sharm El Sheikh is the center of tourism action in Sinai
-                  Peninsula and it has the world top diving sites. Specially the
-                  underwater wonders of Ras Mohammed national park that took
-                  Sharm city to whole different level. The city has diving and
-                  shipwreck sites that attract both advanced and recreational
-                  divers from around the world to discover the un parallel
-                  marine life deep down the red sea.
+                  {t(`Sharm El Sheikh is the center of tourism action in Sinai Peninsula and it has the world top diving sites. Specially the underwater wonders of Ras Mohammed national park that took Sharm city to whole different level. The city has diving and shipwreck sites that attract both advanced and recreational divers from around the world to discover the un parallel marine life deep down the red sea.`)}
                 </Typography>
               </CardContent>
 
@@ -314,7 +303,7 @@ const Visit = () => {
                       className="explore__subtitle"
                       component="div"
                     >
-                      Istanbul
+                      {t("Istanbul")}
                     </Typography>
                     <Typography
                       className="visit__maintext"
@@ -322,11 +311,11 @@ const Visit = () => {
                       variant="h8"
                       component="div"
                     >
-                      Turkey
+                      {t("Turkey")}
                     </Typography>
                   </div>
                   <Button variant="contained" href="#contained-buttons">
-                    Explore more
+                    {t("Explore more")}
                   </Button>
                 </div>
                 <Typography
@@ -334,11 +323,7 @@ const Visit = () => {
                   variant="body2"
                   color="text.secondary"
                 >
-                  Istanbul is the most populous city in Turkey and its cultural,
-                  economic and historic center. It is located in north-western
-                  part of Turkey, divided into European and Asian side by
-                  Bosphorus, which connects the Sea of Marmara and Black Sea. It
-                  is the only city in the world that sits on two continents.
+                  {t(`Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It is located in north-western part of Turkey, divided into European and Asian side by Bosphorus, which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two continents.`)}
                 </Typography>
               </CardContent>
 
@@ -352,7 +337,7 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    67.41 Mil People
+                    {t("67.41 Mil People")}
                   </Typography>
                 </div>
                 <div className="visit__box">
@@ -363,7 +348,7 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    551.500 km2
+                    {t("551.500 km2")}
                   </Typography>
                 </div>{" "}
                 <div className="visit__box">
@@ -374,14 +359,15 @@ const Visit = () => {
                     variant="h8"
                     component="div"
                   >
-                    $425.600
+                    {t("$425.600")}
                   </Typography>
                 </div>
               </div>
 
               <hr className="explore__hr" />
               <a href="#" className="visit__links">
-                Need Directions ? <i className="fa-solid fa-right-long"></i>
+                {t("Need Directions ?")}{" "}
+                <i className="fa-solid fa-right-long"></i>
               </a>
             </div>
           </div>

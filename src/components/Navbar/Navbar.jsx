@@ -12,6 +12,7 @@ const Navbar = () => {
   };
 
   const handleChange = (e) => {
+   
     const selectedLanguage = e.target.value;
 
     i18next.changeLanguage(selectedLanguage);
