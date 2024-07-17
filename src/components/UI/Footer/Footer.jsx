@@ -12,7 +12,7 @@ const Footer = () => {
             Make A Reservation By Clicking The Button
           </p>
         </div>
-        <Button variant="contained">Outlined</Button>
+        <Button variant="contained">Book Yours Now</Button>
       </div>
     </div>
   );

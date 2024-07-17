@@ -25,19 +25,19 @@ const Forms = () => {
 
     if (date && surName && name && country && number) {
       const token = `7276780290:AAFZ5uwwEw3HwQn86eHxCV126WTpGdZ5pvo`;
-      const chat_id = 1002176782841;
+      const chat_id = -1002176782841;
       const url = `https://api.telegram.org/bot${token}/sendMessage`;
 
       axios({
-        url: 'http://localhost:5000/users',
+        url: url,
         method: "POST",
         data: {
           chat_id: chat_id,
           text: JSON.stringify(userData),
         },
       })
-        .then((data) => alert("malumot yuborildi"))
-        .catch((error) => alert(error))
+        .then((data) => console.log(data))
+        .catch((error) => console.log(error))
         .finally(() => {
           setLoading(false);
         });
