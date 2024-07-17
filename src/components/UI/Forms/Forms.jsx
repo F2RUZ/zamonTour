@@ -36,8 +36,8 @@ const Forms = () => {
           text: JSON.stringify(userData),
         },
       })
-        .then((data) => console.log(data))
-        .catch((error) => console.log(error))
+        .then((data) => alert("Malumot yuborildi..."))
+        .catch((error) => alert(error))
         .finally(() => {
           setLoading(false);
         });
