@@ -15,7 +15,7 @@ i18n
 
 i18next.init({
   fallbacking: "en",
-  lng: "uz",
+  lng: "",
   dubug: true,
   resources: {
     uz: { translation: uzTranslation },

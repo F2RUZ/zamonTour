@@ -5,22 +5,25 @@ import i18next from "i18next";
 import { useTranslation } from "react-i18next";
 const Navbar = () => {
   const [showNav, setShownav] = useState(false);
+  const [language, setLanguage] = useState("");
   const { t } = useTranslation();
-  // localStorage dan tanlagan tilni olish
-  const i18nextLng = localStorage.getItem("i18nextLng")
-    ? localStorage.getItem("i18nextLng")
-    : "ru";
+  const storedLanguage = localStorage.getItem("language");
 
-  // tanlagan til holatini saqlash uchun state
-  const [tanlanganTil, setTanlanganTil] = useState(i18nextLng);
-
-  // useEffect yordamida tanlangan til o'zgarganda localStorage ga saqlash
   useEffect(() => {
-    localStorage.setItem("i18nextLng", tanlanganTil);
-  }, [tanlanganTil]);
+    // localStorage dan til ma'lumotini olish
+    // const storedLanguage = localStorage.getItem("language");
+    if (storedLanguage) {
+      setLanguage(storedLanguage);
+    } else {
+      // Agar localStorage da til bo'lmasa, default tilni o'rnating
+      localStorage.setItem("language", "uzbek"); // default tilni o'rnatish, masalan uzbek
+      setLanguage("uz"); // default tilni komponentga joylashtirish
+    }
+  }, []);
 
-  const changeLanguage = (till) => {
-    setTanlanganTil(till);
+  const handleChangeLanguage = (newLanguage) => {
+    setLanguage(newLanguage);
+    localStorage.setItem("language", newLanguage); // localStorage ga saqlash
   };
 
   //Open navbar or
@@ -29,9 +32,12 @@ const Navbar = () => {
   };
 
   const handleChange = (e) => {
+    handleChangeLanguage(e.target.value);
     const selectedLanguage = e.target.value;
     i18next.changeLanguage(selectedLanguage);
   };
+
+ 
 
   return (
     <div className="navbar">
@@ -83,31 +89,10 @@ const Navbar = () => {
           </ul>
 
           <div className="navbar__languages">
-            <select onChange={handleChange} name="lang" id="lang">
-              <option
-                onClick={() => {
-                  changeLanguage("uz");
-                }}
-                value="uz"
-              >
-                Uz
-              </option>
-              <option
-                onClick={() => {
-                  changeLanguage("en");
-                }}
-                value="en"
-              >
-                En
-              </option>
-              <option
-                onClick={() => {
-                  changeLanguage("ru");
-                }}
-                value="ru"
-              >
-                Ru
-              </option>
+            <select value={storedLanguage} onChange={handleChange} name="lang" id="lang">
+              <option value="uz">Uz</option>
+              <option value="en">En</option>
+              <option value="ru">Ru</option>
             </select>
             <a target="_blank" href="https://web.telegram.org/">
               <p className="navbar__laguage">
