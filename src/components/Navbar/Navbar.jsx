@@ -3,6 +3,7 @@ import logo from "../../assets/img/zamon.svg";
 import { useEffect, useState } from "react";
 import i18next from "i18next";
 import { useTranslation } from "react-i18next";
+import { Bounce, toast } from "react-toastify";
 const Navbar = () => {
   const [showNav, setShownav] = useState(false);
   const [language, setLanguage] = useState("");
@@ -35,9 +36,20 @@ const Navbar = () => {
     handleChangeLanguage(e.target.value);
     const selectedLanguage = e.target.value;
     i18next.changeLanguage(selectedLanguage);
-  };
 
- 
+    toast.success(`🦄 Til muvofaqqiyatli o'zgartirildi `, {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      transition: Bounce,
+    });
+    handleNavbar();
+  };
 
   return (
     <div className="navbar">
@@ -89,7 +101,12 @@ const Navbar = () => {
           </ul>
 
           <div className="navbar__languages">
-            <select value={storedLanguage} onChange={handleChange} name="lang" id="lang">
+            <select
+              value={storedLanguage}
+              onChange={handleChange}
+              name="lang"
+              id="lang"
+            >
               <option value="uz">Uz</option>
               <option value="en">En</option>
               <option value="ru">Ru</option>
