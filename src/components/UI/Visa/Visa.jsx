@@ -73,7 +73,7 @@ const Visa = () => {
             alt="green iguana"
             className="week__pic visa__pic"
           />
-          <Card className="week__item visa__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item visa__item " sx={{ maxWidth: 280}}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -137,7 +137,7 @@ const Visa = () => {
             alt="green iguana"
             className="week__pic visa__pic"
           />
-          <Card className="week__item visa__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item visa__item " sx={{ maxWidth: 280}}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -201,7 +201,7 @@ const Visa = () => {
             alt="green iguana"
             className="week__pic visa__pic"
           />
-          <Card className="week__item visa__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item visa__item " sx={{ maxWidth: 280}}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -265,7 +265,7 @@ const Visa = () => {
             alt="green iguana"
             className="week__pic visa__pic"
           />
-          <Card className="week__item visa__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item visa__item " sx={{ maxWidth: 280}}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -329,7 +329,7 @@ const Visa = () => {
             alt="green iguana"
             className="week__pic visa__pic"
           />
-          <Card className="week__item visa__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item visa__item " sx={{ maxWidth: 280}}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -393,7 +393,7 @@ const Visa = () => {
             alt="green iguana"
             className="week__pic visa__pic"
           />
-          <Card className="week__item visa__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item visa__item " sx={{ maxWidth: 280}}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">

@@ -66,7 +66,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -135,7 +135,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -198,7 +198,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -261,7 +261,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -324,7 +324,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -387,7 +387,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">
@@ -450,7 +450,7 @@ function Week() {
             alt="green iguana"
             className="week__pic"
           />
-          <Card className="week__item " sx={{ maxWidth: 345 }}>
+          <Card className="week__item " sx={{ maxWidth: 300 }}>
             <CardActionArea>
               <div className="week__card-top">
                 <div className="week__card-wrapper">

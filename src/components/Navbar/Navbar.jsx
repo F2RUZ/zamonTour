@@ -48,7 +48,6 @@ const Navbar = () => {
       theme: "dark",
       transition: Bounce,
     });
-    handleNavbar();
   };
 
   return (
