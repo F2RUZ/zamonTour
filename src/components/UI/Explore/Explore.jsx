@@ -44,7 +44,7 @@ const Explore = () => {
                     >
                       {t("Cheap Railway Tickets With Us")}
                     </Typography>
-                    <Typography  gutterBottom variant="h8" component="div">
+                    <Typography gutterBottom variant="h8" component="div">
                       {t("Whole world")}
                     </Typography>
                   </div>
@@ -90,7 +90,7 @@ const Explore = () => {
                     >
                       {t("Discover Exciting Air Travel Deals")}
                     </Typography>
-                    <Typography  gutterBottom variant="h8" component="div">
+                    <Typography gutterBottom variant="h8" component="div">
                       {t("Global Destinations")}
                     </Typography>
                   </div>
