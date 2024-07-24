@@ -33,7 +33,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 120vh;
   }
   &__top {
     display: -webkit-box;
@@ -173,7 +173,7 @@
       width: 200px;
     }
     &__title {
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
       overflow-y: hidden;
     }
@@ -182,7 +182,7 @@
       font-size: 1rem;
     }
     &__slide{
-      height: 100vh;
+      height: 125vh;
     }
     &__bottom {
       width: 80%;
