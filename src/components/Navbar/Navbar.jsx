@@ -36,18 +36,6 @@ const Navbar = () => {
     handleChangeLanguage(e.target.value);
     const selectedLanguage = e.target.value;
     i18next.changeLanguage(selectedLanguage);
-
-    toast.success(`🦄 Til muvofaqqiyatli o'zgartirildi `, {
-      position: "top-center",
-      autoClose: 2000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      transition: Bounce,
-    });
   };
 
   return (
